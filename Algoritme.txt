@@ -25,3 +25,18 @@ Podriem dir que les posicions s'indiquin de la següent forma:
                                                           
 --> segona pregunta (el mateix concepte)
           {La idea es, si la pregunta es correcta augmenta x++ i fer la següent pregunta, si arriba al final i vol registrar altre usuari augmenta la i++, vol dir que tornem al bucle de les preguntes de el inici i augmentem una fila més}
+          
+
+###############
+## APARTAT C ##
+###############
+
+En aquest apartat hem de preguntar a l'usuari si vol veure les dades ordenades per categoria, primer ha de mostrar les dades, una vegada mostrat les dades ha de preguntar si es volen veure les dades per categoria. Ho podem fer de la següent forma:
+-mostrar el resum de les dades
+-Vols veure les dades ordenades per categoria?
+--> si (boolean categoriaOrdre = true;)
+--> no (boolean categoriaOrdre = false;)
+- Una vegada feta la resposta --> if (categoriaOrdre) {
+          Tot el codi per ordenar les dades
+          Una vegada ordenades mostrar les dades ordenades
+}
