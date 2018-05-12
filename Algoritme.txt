@@ -11,7 +11,9 @@
 ## APARTAT B ##
 ###############
 
-- L'exercici diu que hem de modificar el codi perque la array sigui bidimensional, ales hores necesitem un array amb un máxim de 10 files, es a dir un máxim de 10 usuaris registrats amb un máxim de 7 columnes, cada columna conté cada tipus de dada, tots son tipus int però per nosaltres representen tipus de dades diferents, ID, dates de naixement, sexe ...
+- L'exercici diu que hem de modificar el codi perque la array sigui bidimensional, ales hores necesitem un array amb un máxim de
+10 files, es a dir un máxim de 10 usuaris registrats amb un máxim de 7 columnes, cada columna conté cada tipus de dada, tots son
+tipus int però per nosaltres representen tipus de dades diferents, ID, dates de naixement, sexe ...
 Primer cal indicar el tamny i la creació de la array bidimensional: int registre [][] = new int [USER_MAX][COLUM_MAX]
 
 Podriem dir que les posicions s'indiquin de la següent forma:
@@ -19,19 +21,24 @@ Podriem dir que les posicions s'indiquin de la següent forma:
           --> x = indicará la posició de la columna
           registre[i][x]
 
-- Una vegada indicat el tamany hem de modificar el codi en la forma de guardar les dades, es a dir, l'usuari ha d'introduïr unes dades ja que el nostre programa pregunta i espera una resposta, en el moment d'introduir aquestes dades s'han de guardar de forma ordenada, podriem dir que cada pregunta es una columna, en les array les posicions comencen en 0 que sería en realitat la primera posició. La idea podría ser la següent:
+- Una vegada indicat el tamany hem de modificar el codi en la forma de guardar les dades, es a dir, l'usuari ha d'introduïr unes
+dades ja que el nostre programa pregunta i espera una resposta, en el moment d'introduir aquestes dades s'han de guardar de forma
+ordenada, podriem dir que cada pregunta es una columna, en les array les posicions comencen en 0 que sería en realitat la primera
+posició. La idea podría ser la següent:
  --> Primera pregunta --> la resposta es correcta? --> si --> guardem les dades en les posicions correctes: registre[i][x]                                        
                                                           --> no --> tornem a preguntar, no fem cas si ha superat el límit
                                                           
 --> segona pregunta (el mateix concepte)
-          {La idea es, si la pregunta es correcta augmenta x++ i fer la següent pregunta, si arriba al final i vol registrar altre usuari augmenta la i++, vol dir que tornem al bucle de les preguntes de el inici i augmentem una fila més}
+          {La idea es, si la pregunta es correcta augmenta x++ i fer la següent pregunta, si arriba al final i vol registrar
+          altre usuari augmenta la i++, vol dir que tornem al bucle de les preguntes de el inici i augmentem una fila més}
           
 
 ###############
 ## APARTAT C ##
 ###############
 
-En aquest apartat hem de preguntar a l'usuari si vol veure les dades ordenades per categoria, primer ha de mostrar les dades, una vegada mostrat les dades ha de preguntar si es volen veure les dades per categoria. Ho podem fer de la següent forma:
+En aquest apartat hem de preguntar a l'usuari si vol veure les dades ordenades per categoria, primer ha de mostrar les dades, una
+vegada mostrat les dades ha de preguntar si es volen veure les dades per categoria. Ho podem fer de la següent forma:
 -mostrar el resum de les dades
 -Vols veure les dades ordenades per categoria?
 --> si (boolean categoriaOrdre = true;)
@@ -40,7 +47,8 @@ En aquest apartat hem de preguntar a l'usuari si vol veure les dades ordenades p
           Tot el codi per ordenar les dades
           Una vegada ordenades mostrar les dades ordenades
 }
--Per ordenar les dades utilitzarem el metóde que ens han ensenyat al IOC,he vist per internet que hi ha altre metóde, però utilitzarem el metòde congut com "bubble sort", ho farem de la següent forma:
+-Per ordenar les dades utilitzarem el metóde que ens han ensenyat al IOC,he vist per internet que hi ha altre metóde, però
+utilitzarem el metòde congut com "bubble sort", ho farem de la següent forma:
           1 - crear un bucle for per fer de contador de files ( int i = 0; i < registre.lenght; i++)
           2 - crear un bucle for per fer contador de les columnes (int x = 0; x < COLUM_MAX; x++)
           3 - crear un bucle for per fer contador de fila, la següent fila per compararla amb la anterior, concepte bubble sort
@@ -51,9 +59,10 @@ En aquest apartat hem de preguntar a l'usuari si vol veure les dades ordenades p
                     si el de la primera fila es més gran que el de la segona fila comença l'ordenació de totes les dades:
                     */
                     -Per ordenar les dades utilitzem el metòde aprés en IOC, necesitem utilitzar les variables auxiliars.
-                    Totes les dades han de ser ordenades, però qui determina l'ordre es categoria gracies a la condició creada en aquest pas.
+                    Totes les dades han de ser ordenades, però qui determina l'ordre es categoria gracies a la condició creada 
+                    en aquest pas.
                     El concepte d'ordenació es el següent:
-                    auxCat =
+                    auxCat = 
                     
                     
                     }
