@@ -40,3 +40,8 @@ En aquest apartat hem de preguntar a l'usuari si vol veure les dades ordenades p
           Tot el codi per ordenar les dades
           Una vegada ordenades mostrar les dades ordenades
 }
+-Per ordenar les dades utilitzarem el metóde que ens han ensenyat al IOC,he vist per internet que hi ha altre metóde, però utilitzarem el metòde congut com "bubble sort", ho farem de la següent forma:
+          1 - crear un bucle for per fer de contador de files ( int i = 0; i < registre.lenght; i++)
+          2 - crear un bucle for per fer contador de les columnes (int x = 0; x < COLUM_MAX; x++)
+          3 - crear un bucle for per fer contador de fila, la següent fila per compararla amb la anterior, concepte bubble sort
+                    (int j = i + 1; j < registre.lenght; j++)
