@@ -62,7 +62,51 @@ utilitzarem el metòde congut com "bubble sort", ho farem de la següent forma:
                     Totes les dades han de ser ordenades, però qui determina l'ordre es categoria gracies a la condició creada 
                     en aquest pas.
                     El concepte d'ordenació es el següent:
-                    auxCat = 
-                    
+                    auxCat = registre[i][POS_CAT];
+                    registre[i][POS_CAT] = registre[j][POS_CAT];
+                    registre[j][POS_CAT] = auxCat;
+                    //Amb aquest concepte s'ordenen les dades, s'ha d'aplicar en totes les parts
                     
                     }
+-Per mostrar les dades ordenades i respectant els estrings ho fem de la manera següent:
+1-Dins del if anterior en el cual s'indica que es vol veure les dades ordenades per categoría:
+2- Crear bucle per fer contador de les files: for (i = 0; i < registre.lenght; i++)
+3- crear bucle per fer contador de les columnes, en aquest cas s'ha de posar com a límit la posició de sexe:
+          for (x = 0; x < POS_SEX; x++) 
+          - Mostrem les dades fins a aquest punt, no volem que es mostri el número del sexe
+          per aquest motiu posem com a limit POS_SEX : System.out.print(registre[i][x] +"\t");
+          -Dins aquest bucle volem mostrar les dades String del sexe, ho fem amb switch per analitzar el valor d'aquesta posició
+          i depen del valor mostrara un string o mostrará altre, es el punt final del bucle x, el que controla les posicions:
+          switch (registre[i][POS_SEX])
+                    case NOI:
+                              sexString = "noi"; //aquest es el string que mostrarem per aquesta posició
+                              System.out.print(sexString +"\t");
+                              break;
+                    case NOIA:
+                              utilitzem el mateix concepte.
+4- Crear un altre for per a les posicions que falten, utilitzarem el mateix concepte per mostrar el string de la categoría,
+anem jugant amb el limit del contador i abans d'arribar a la posició de categoria finalitza el bucle per mostrem les dades amb 
+switch:
+          switch (registre[][POS_CAT])
+                    case JUN:
+                              catString = "Junior";
+                              System.out.print(catString +"\t");
+                              break;
+                              
+                (Utilitzem la mateixa estructura a la resta de categorias)
+5- Encara falten mes posicions de columnes a mostrar, tots aquests bucles estan dins del bucle "for i" ja que contenen
+totes les dades. Tornariem a crear un altre bucle for per a les posicions de les columnes que ens queden i mostrar les seves
+dades: (En aquest cas en concret només queda una posició, ales hores no té sentit crear un bucle, podem mostrar directament
+l'ultima posició, qué quedaría així:)
+          System.out.print(registre[i][POS_PUNT]); //la i sempre variaria ja que indica la fila pero la columna en aquest cas
+          sempré será la mateixa en aquest punt, recordem que aquesta sentencía está dins del for "i".
+          
+6-L'ercici demana que el programa fagi un recontament dels usuaris que hi ha per categoria, ho podem fer de la següent forma:
+En la sexta pregunta fa referencia per la categoria, dins d'aquesta pregunta podem crear unes condicions en les quals augmentin
+els diferents contadors, es a dir qué tindriem 3 variables diferents, per exemple "contInf, contJun, contSen"
+          Si la resposta es del tipus correcte i compleix amb totes les condicions perque sigui una resposta acceptada
+          diem per exemple que: contInf++;
+                    contJun++;
+ D'aquesta forma tenim un recompte, ales hores ara només queda mostrar el recompte dins del if on indica que si es vol veure
+ l'informació ordenada per categories
+ System.out.println("Hi ha un total de " +contInf +"registrats en la categoria infantil.")
