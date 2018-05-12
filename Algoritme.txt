@@ -1,0 +1,24 @@
+# P4_e11_
+###############        
+## APARTAT A ##
+###############
+
+
+
+
+
+###############
+## APARTAT B ##
+###############
+
+- L'exercici diu que hem de modificar el codi perque la array sigui bidimensional, ales hores necesitem un array amb un máxim de 10 files, es a dir un máxim de 10 usuaris registrats amb un máxim de 7 columnes, cada columna conté cada tipus de dada, tots son tipus int però per nosaltres representen tipus de dades diferents, ID, dates de naixement, sexe ...
+Primer cal indicar el tamny i la creació de la array bidimensional: int registre [][] = new int [USER_MAX][COLUM_MAX]
+
+Podriem dir que les posicions s'indiquin de la següent forma:
+          --> i = indicará posició de la fila
+          --> x = indicará la posició de la columna
+          registre[i][x]
+
+- Una vegada indicat el tamany hem de modificar el codi en la forma de guardar les dades, es a dir, l'usuari ha d'introduïr unes dades ja que el nostre programa pregunta i espera una resposta, en el moment d'introduir aquestes dades s'han de guardar de forma ordenada, podriem dir que cada pregunta es una columna, en les array les posicions comencen en 0 que sería en realitat la primera posició. La idea podría ser la següent:
+        --> Primera pregunta --> la resposta es correcta? --> si --> 
+                                                          --> no --> tornem a preguntar, no fem cas si ha superat el límit
