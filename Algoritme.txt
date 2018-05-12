@@ -52,6 +52,8 @@ En aquest apartat hem de preguntar a l'usuari si vol veure les dades ordenades p
                     */
                     -Per ordenar les dades utilitzem el metòde aprés en IOC, necesitem utilitzar les variables auxiliars.
                     Totes les dades han de ser ordenades, però qui determina l'ordre es categoria gracies a la condició creada en aquest pas.
+                    El concepte d'ordenació es el següent:
+                    auxCat =
                     
                     
                     }
