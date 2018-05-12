@@ -2,6 +2,16 @@
 ###############        
 ## APARTAT A ##
 ###############
+per aplicar totes les funcionalitat necesitem les següents variables afegides:
+int registre[][];
+USER_MAX = 10;
+COLUM_MAX = 7;
+boolean categoriaOrdre;
+POS_CAT = 5;
+POS_SEX = 4;
+int contInf = 0;
+int contJun = 0;
+int contSen = 0;
 
 
 
