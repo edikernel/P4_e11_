@@ -45,3 +45,13 @@ En aquest apartat hem de preguntar a l'usuari si vol veure les dades ordenades p
           2 - crear un bucle for per fer contador de les columnes (int x = 0; x < COLUM_MAX; x++)
           3 - crear un bucle for per fer contador de fila, la següent fila per compararla amb la anterior, concepte bubble sort
                     (int j = i + 1; j < registre.lenght; j++)
+          4 - una vegada creat els bucles cal ordenar les dades per categoria, ho farem de la següent forma:
+                    si (registre[i][POS_CAT] > registre[j][POS_CAT]) {
+                    /** comparem el valor de la posició categoria de la primera fila amb el de la segona fila
+                    si el de la primera fila es més gran que el de la segona fila comença l'ordenació de totes les dades:
+                    */
+                    -Per ordenar les dades utilitzem el metòde aprés en IOC, necesitem utilitzar les variables auxiliars.
+                    Totes les dades han de ser ordenades, però qui determina l'ordre es categoria gracies a la condició creada en aquest pas.
+                    
+                    
+                    }
