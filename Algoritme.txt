@@ -20,5 +20,8 @@ Podriem dir que les posicions s'indiquin de la següent forma:
           registre[i][x]
 
 - Una vegada indicat el tamany hem de modificar el codi en la forma de guardar les dades, es a dir, l'usuari ha d'introduïr unes dades ja que el nostre programa pregunta i espera una resposta, en el moment d'introduir aquestes dades s'han de guardar de forma ordenada, podriem dir que cada pregunta es una columna, en les array les posicions comencen en 0 que sería en realitat la primera posició. La idea podría ser la següent:
-        --> Primera pregunta --> la resposta es correcta? --> si --> 
+ --> Primera pregunta --> la resposta es correcta? --> si --> guardem les dades en les posicions correctes: registre[i][x]                                        
                                                           --> no --> tornem a preguntar, no fem cas si ha superat el límit
+                                                          
+--> segona pregunta (el mateix concepte)
+          {La idea es, si la pregunta es correcta augmenta x++ i fer la següent pregunta, si arriba al final i vol registrar altre usuari augmenta la i++, vol dir que tornem al bucle de les preguntes de el inici i augmentem una fila més}
